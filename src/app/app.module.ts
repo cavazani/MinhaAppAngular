@@ -15,6 +15,7 @@ import { ContatoComponent } from './institucional/contato/contato.component';
 import { RouterModule } from '@angular/router';
 import { rootRouterConfig } from './app.routes';
 import { DataBindingComponent } from './demos/data-binding/data-binding.component';
+import { ProdutosService } from './produtos/produtos.services';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { DataBindingComponent } from './demos/data-binding/data-binding.componen
   ],
   providers: [
     ServicoService,
+    ProdutosService,
     {provide: APP_BASE_HREF, useValue: '/'} //Prefixo de rota
 
   ],
